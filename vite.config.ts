@@ -48,6 +48,8 @@ const windowsTimePlugin = () => {
 }
 
 export default defineConfig({
+  // Ensure assets resolve correctly when served from GitHub Pages/custom domains
+  base: "./",
   plugins: [
     // The React and Tailwind plugins are both required for Make, even if
     // Tailwind is not being actively used – do not remove them
